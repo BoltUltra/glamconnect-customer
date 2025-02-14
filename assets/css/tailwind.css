@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'CabinetGrotesk', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cabinet, h1, h2, h3, h4, h5, h6, p, span, a, li, td, th, input, textarea, select, button, label, div {
+    font-family: 'CabinetGrotesk', sans-serif;
+}
+
+.form-label{
+    @apply block text-sm font-medium text-gray-700 dark:text-white
+}
+
+.form-input{
+    @apply mt-2 block w-full px-4 py-3 border border-[#A6A6A6] bg-[#EEEEEE] text-[#807A7A] dark:text-white dark:bg-gray-800 dark:border-gray-700 rounded-2xl transition-colors duration-1000 ease-in-out
+}
+
+.transition__custom {
+    @apply transition-colors duration-1000 ease-in-out
+}
+
+.container__custom{
+    @apply px-4 md:px-10  max-w-[1440px] lg:px-16 mx-auto
+}
+
+.section-button {
+    border-radius: 99px;
+    border: 1px solid rgba(13, 13, 13, 0.10);
+    background: conic-gradient(from 181deg at 50% 50%, rgba(13, 13, 13, 0.05) 172.66420125961304deg, rgba(53, 130, 88, 0.30) 281.25deg, rgba(47, 140, 129, 0.12) 360deg), rgba(13, 13, 13, 0.05);
+    @apply px-6 py-3;
+}
+
+.social_icon{
+    @apply h-10 w-10 flex items-center justify-center rounded-full
+}
